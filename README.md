@@ -5,3 +5,5 @@ The motivation for this project comes from recent geopolitical tensions such as 
 This project aims to answer:
 
 How do major economic/ geopolitical events impact different stock sectors? Do those impacts last or just short-term hype?
+
+More information about the project process, such as how data is collected, prepared, and analysed, will be in the docs report.
