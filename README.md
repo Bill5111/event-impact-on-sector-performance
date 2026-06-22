@@ -71,4 +71,4 @@ It contains:
 ### 5. Disclaimer
 This project is produced solely for informational purposes. It does not constitute financial advice, a solicitation, or a recommendation to buy or sell any financial instrument. Past performance is not indicative of future results. Investors should conduct their own due diligence and consult a qualified, regulated financial advisor before making any investment decisions.
 
-For any queries, please reach out to *** phingochai2005@gmail.com
+For any queries, please reach out to phingochai2005@gmail.com
