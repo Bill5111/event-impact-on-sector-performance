@@ -1,4 +1,5 @@
 # Sector Performance Analysis: Event Impact & Long-Term Growth
+
 ## A data-driven guide for investors to navigate major market events without FOMO.
 
 ## Tools used: Google Finance (data source) · Microsoft Excel Power Query (consolidation) · MySQL (data modelling & analytical views) · Power BI (DAX, interactive dashboard)
@@ -19,7 +20,7 @@ The goal is to give investors an objective, repeatable framework to separate tem
 
 #### Event character matters more than the aggregate. For example, COVID-19 was an acute but recoverable shock (sharp drop, fast rebound), whereas the Global Financial Crisis caused lasting structural damage (slow, incomplete recovery). Sustainable returns come from structural drivers, not from temporary disruptions in sectors like Energy or Materials.
 
-### 3. Dataset Description
+### 3. Dataset Description:
 Source: Daily price data for 9 iShares US sector ETFs, sourced from Google Finance.
 
 Coverage: 47,000+ daily records spanning 2008–2025 (17 years).
@@ -69,7 +70,7 @@ It contains:
   
 ![Event Impact Dashboard](dashboard.png)
 
-### 5. Disclaimer
+### 5. Disclaimer:
 This project is produced solely for informational purposes. It does not constitute financial advice, a solicitation, or a recommendation to buy or sell any financial instrument. Past performance is not indicative of future results. Investors should conduct their own due diligence and consult a qualified, regulated financial advisor before making any investment decisions.
 
 For any queries, please reach out to phingochai2005@gmail.com
