@@ -67,7 +67,9 @@ It contains:
 - Volatility bar chart — standard deviation of daily returns by sector during events, with a baseline reference line.
 - Return trend matrix — the three phases (During / 3M after / 6M after) as colour-coded columns.
 - Volatility clustered column chart — compares volatility across the three phases per sector, confirming whether volatility normalises after the event.
-  
+
+Please access this [Dashboard Link](https://app.powerbi.com/reportEmbed?reportId=44df9cde-a6d1-4010-aefe-ca6046790af5&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6) for more information
+
 ![Event Impact Dashboard](dashboard.png)
 
 ### 5. Disclaimer:
