@@ -6,6 +6,7 @@ Tools used: Google Finance (data source) · Microsoft Excel Power Query (consoli
 Fear Of Missing Out (FOMO) is one of the most financially damaging behaviours in modern investing. When a geopolitical or economic event causes a sector to spike, retail investors often rush in, believing they are seizing an opportunity — only to buy at inflated prices and watch the gains evaporate.
 This project tests that behaviour against 17 years of evidence. Using 47,000+ daily price records across 9 US sector ETFs (2008–2025), it answers a single core question:
 > **How do major economic and geopolitical events impact different stock sectors — and do those impacts last, or are they short-term hype?**
+
 The goal is to give investors an objective, repeatable framework to separate temporary, event-driven spikes from genuine, structurally-supported long-term growth — and to do so interactively for any past or future market event.
 
 ### 2. Key Insights: 
@@ -19,6 +20,7 @@ The goal is to give investors an objective, repeatable framework to separate tem
 
 ### 3. Dataset Description
 Source: Daily price data for 9 iShares US sector ETFs, sourced from Google Finance.
+
 Coverage: 47,000+ daily records spanning 2008–2025 (17 years).
 
 #### Sector ETs table
@@ -44,25 +46,29 @@ Coverage: 47,000+ daily records spanning 2008–2025 (17 years).
 | 2025 Spring Trade Shock | Apr 2025 | May 2025 | US trade policy disruption |
 
 > Event dates represent the **peak period of market disruption** (estimated from public information), not the official political/economic start and end dates.
+
 Preparation & modelling pipeline
-Collection — Individual CSVs downloaded per ETF ticker, each tagged with `Ticker` and `Sector` columns to enable cross-sector analysis.
-Consolidation — All 9 files merged into one master dataset (47,000+ rows) using Power Query in Excel.
-Quality checks — Verified for duplicates, correct data types, chronological/logical consistency (High ≥ Low), and consistent labels. First-day `Daily_return` nulls handled with `NULLIF` rather than dropped.
-Data modelling (MySQL) — Loaded into a `market_sector` database with a fact table (`stock_price_summary`) and an `event` reference table. Three analytical views segment performance into during event, 3 months after, and 6 months after windows.
-Dashboard model (Power BI) — The views imported via the MySQL connector. A calculated DAX table (`All_Phases`, built with `UNION` + `SELECTCOLUMNS`) combines the three phases for the trend matrix visuals.
----
+- Collection — Individual CSVs downloaded per ETF ticker, each tagged with `Ticker` and `Sector` columns to enable cross-sector analysis.
+- Consolidation — All 9 files merged into one master dataset (47,000+ rows) using Power Query in Excel.
+- Quality checks — Verified for duplicates, correct data types, chronological/logical consistency (High ≥ Low), and consistent labels. First-day `Daily_return` nulls handled with `NULLIF` rather than dropped.
+- Data modelling (MySQL) — Loaded into a `market_sector` database with a fact table (`stock_price_summary`) and an `event` reference table. Three analytical views segment performance into during event, 3 months after, and 6 months after windows.
+- Dashboard model (Power BI) — The views imported via the MySQL connector. A calculated DAX table (`All_Phases`, built with `UNION` + `SELECTCOLUMNS`) combines the three phases for the trend matrix visuals.
+
 ### 4. Visualisation:
 
-- The interactive Event Impact Dashboard (Power BI) lets users explore any event/sector combination via slicers. It is designed to answer directly: are event impacts lasting, or short-term hype?
+The interactive Event Impact Dashboard (Power BI) lets users explore any event/sector combination via slicers. It is designed to answer directly: are event impacts lasting, or short-term hype?
+
 It contains:
-KPI cards — average daily return during the event, 3 months after, 6 months after, and the highest-volatility sector for the selected event.
-Average return heatmap — a sector × event matrix with red-white-green conditional formatting centred at zero.
-Volatility bar chart — standard deviation of daily returns by sector during events, with a baseline reference line.
-Return trend matrix — the three phases (During / 3M after / 6M after) as colour-coded columns.
-Volatility clustered column chart — compares volatility across the three phases per sector, confirming whether volatility normalises after the event.
+
+- KPI cards — average daily return during the event, 3 months after, 6 months after, and the highest-volatility sector for the selected event.
+- Average return heatmap — a sector × event matrix with red-white-green conditional formatting centred at zero.
+- Volatility bar chart — standard deviation of daily returns by sector during events, with a baseline reference line.
+- Return trend matrix — the three phases (During / 3M after / 6M after) as colour-coded columns.
+- Volatility clustered column chart — compares volatility across the three phases per sector, confirming whether volatility normalises after the event.
+  
 ![Event Impact Dashboard](dashboard.png)
----
+
 ### 5. Disclaimer
 This project is produced solely for informational purposes. It does not constitute financial advice, a solicitation, or a recommendation to buy or sell any financial instrument. Past performance is not indicative of future results. Investors should conduct their own due diligence and consult a qualified, regulated financial advisor before making any investment decisions.
 
-For any queries, please reach out to phingochai2005@gmail.com
+For any queries, please reach out to *** phingochai2005@gmail.com
