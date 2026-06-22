@@ -1,6 +1,7 @@
 # Sector Performance Analysis: Event Impact & Long-Term Growth
-A data-driven guide for investors to navigate major market events without FOMO.
-Tools used: Google Finance (data source) · Microsoft Excel Power Query (consolidation) · MySQL (data modelling & analytical views) · Power BI (DAX, interactive dashboard)
+## A data-driven guide for investors to navigate major market events without FOMO.
+
+## Tools used: Google Finance (data source) · Microsoft Excel Power Query (consolidation) · MySQL (data modelling & analytical views) · Power BI (DAX, interactive dashboard)
 ---
 ### 1. Purpose of the Project:
 Fear Of Missing Out (FOMO) is one of the most financially damaging behaviours in modern investing. When a geopolitical or economic event causes a sector to spike, retail investors often rush in, believing they are seizing an opportunity — only to buy at inflated prices and watch the gains evaporate.
