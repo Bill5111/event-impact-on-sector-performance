@@ -70,7 +70,7 @@ It contains:
 
 Please access this [Dashboard Link](https://app.powerbi.com/reportEmbed?reportId=44df9cde-a6d1-4010-aefe-ca6046790af5&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6) for more information
 
-![Event Impact Dashboard](4_dashboard.png)
+![Event Impact Dashboard](Event_Impact_Dashboard.png)
 
 ### 5. Disclaimer:
 This project is produced solely for informational purposes. It does not constitute financial advice, a solicitation, or a recommendation to buy or sell any financial instrument. Past performance is not indicative of future results. Investors should conduct their own due diligence and consult a qualified, regulated financial advisor before making any investment decisions.
